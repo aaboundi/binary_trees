@@ -3,13 +3,13 @@
 /**
  * parent_counter - Computes the number of non-leaf nodes in a node.
  * @tree: The binary tree.
- * @n: A pointer to the tree's leaf count value.
+ * @n: A pointer to the tree's non-leaf node value.
  */
 void parent_counter(const binary_tree_t *tree, size_t *n)
 {
 	if (tree != NULL)
 	{
-		if ((tree->left != NULL) && (tree->right != NULL))
+		if ((tree->left != NULL) || (tree->right != NULL))
 		{
 			if (n != NULL)
 			{
