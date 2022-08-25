@@ -31,7 +31,7 @@ void tree_height(const binary_tree_t *tree, int n, int *height)
  *
  * Return: The balance factor of the given binary tree.
  */
-size_t binary_tree_leaves(const binary_tree_t *tree)
+int binary_tree_balance(const binary_tree_t *tree)
 {
 	int balance_factor = 0;
 	int left_height = 0;
